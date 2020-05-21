@@ -54,7 +54,7 @@ def demosaic_NEF(imgpath, imgshape = [3000, 4000], white_level = 1023, black_lev
 
 imgpath = 'E:\\Deblur\\Short-Long RGB to RGB Mapping\\data\\slrgb2rgb_long10_short1_mobile_phone\\2020_05_16_13_22_19_382\\2020_05_16_13_22_19_780.raw'
 demosaicked_rgb = demosaic_NEF(imgpath, imgshape = [3000, 4000], \
-    white_level = 1023, black_level = 64, awb = [1.687, 1, 1.398], gamma = 2.2)
+    white_level = 1023, black_level = 64, awb = [2.387, 1 , 1.598], gamma = 2.2)
 
 # show
 demosaicked_rgb = cv2.resize(demosaicked_rgb, (demosaicked_rgb.shape[1] // 4, demosaicked_rgb.shape[0] // 4))
